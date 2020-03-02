@@ -5,8 +5,6 @@
       <li>新闻2</li>
       <li>新闻3</li>
       <li>新闻4</li>
-      <li>新闻5</li>
-      <li>新闻6</li>
     </ul>
   </div>
 </template>
@@ -18,6 +16,10 @@
 </script>
 
 <style scoped>
+  ul{
+    margin: 0;
+    padding: 0;
+  }
   li{
     list-style: none;
   }

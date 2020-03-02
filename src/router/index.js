@@ -9,6 +9,7 @@ const Home = () => import('../views/Home.vue');
 const Find = () => import('../views/Find.vue');
 const FindNews = () => import('../views/FindNews.vue');
 const FindMessage = () => import('../views/FindMessage.vue');
+const Container = () => import('../views/Container')
 const routes = [
   {
     path: '/',
@@ -35,7 +36,7 @@ const routes = [
       {
         path: 'message',
         component: FindMessage
-      }
+      },
     ]
   },
   {
@@ -45,6 +46,10 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.这种方式是路由的懒加载，在用到的时候才会调用
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  },
+  {
+    path: '/container',
+    component: Container
   }
 ]
 
