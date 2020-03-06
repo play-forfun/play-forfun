@@ -9,7 +9,8 @@ const Home = () => import('../views/Home.vue');
 const Find = () => import('../views/Find.vue');
 const FindNews = () => import('../views/FindNews.vue');
 const FindMessage = () => import('../views/FindMessage.vue');
-const Container = () => import('../views/Container')
+const Container = () => import('../views/Container');
+const ContainerXm=()=>import('../components/xioami/ContainerXM')
 const routes = [
   {
     path: '/',
@@ -50,6 +51,10 @@ const routes = [
   {
     path: '/container',
     component: Container
+  },
+  {
+    path:'/containerxiaomi',
+    component:ContainerXm
   }
 ]
 

@@ -1,16 +1,18 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/home">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/find">Find</router-link> |
-      <router-link to="/container">Container</router-link>
+      <router-link to="/home">Home</router-link>  |
+      <router-link to="/about">About</router-link>  |
+      <router-link to="/find">Find</router-link>  |
+      <router-link to="/container">Container</router-link>  |
+      <router-link to="/containerxiaomi">ContainerXM</router-link>
     </div>
     <router-view/>
   </div>
 </template>
 
 <style>
+  @import "assets/css/base.css";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -20,7 +22,10 @@
 }
 
 #nav {
-  padding: 30px;
+  padding: 0;
+  height: 80px;
+  background-color: #fdc534;
+  line-height: 80px;
 }
 
 #nav a {
