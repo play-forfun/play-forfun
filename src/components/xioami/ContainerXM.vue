@@ -3,42 +3,42 @@
     <el-header height="30px">
       <top-container/>
     </el-header>
-    <el-main class="header">Main</el-main>
-    <el-main class="home-hero-swiper">Main</el-main>
-    <el-main class="home-hero-sub">Main</el-main>
-    <el-footer>Footer</el-footer>
+    <top-header/>
+    <el-main>
+      <home-hero-swiper/>
+    </el-main>
+    <el-main>
+      <home-hero-sub/>
+    </el-main>
   </el-container>
 </template>
 
 <script>
-  import TopContainer from "./TopContainer";
+  import TopContainer from "./container/TopContainer";
+  import TopHeader from "./container/TopHeader";
+  import HomeHeroSwiper from "./container/HomeHeroSwiper";
+  import HomeHeroSub from "./container/HomeHeroSub";
+
   export default {
     name: "ContainerXM",
-    components:{
-      TopContainer
+    components: {
+      TopContainer,
+      TopHeader,
+      HomeHeroSwiper,
+      HomeHeroSub
     }
 
   }
 </script>
 
 <style scoped>
-  .el-header, .el-footer {
+  .el-header {
     color: #8de0ff;
     text-align: center;
     line-height: 30px;
-  }
-
-  .el-header {
     background-color: #333333;
     height: 10px;
     padding: 0;
-  }
-
-  .el-aside {
-    background-color: #D3DCE6;
-    color: #333;
-    text-align: center;
-    line-height: 200px;
   }
 
   .el-main {

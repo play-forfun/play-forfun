@@ -1,7 +1,5 @@
 <template>
   <div class="top-container">
-    <!--    <el-row :gutter="30">-->
-    <!--      <el-col :span="16" >-->
     <div class="top-container-nav">
       <el-link :underline="false" href="">小米商城 <span class="sep">|</span></el-link>
       <el-link :underline="false" href="">MIUI <span class="sep">|</span></el-link>
@@ -16,20 +14,15 @@
       <el-link :underline="false" href="">下载app <span class="sep">|</span></el-link>
       <el-link :underline="false" href="">Select Location</el-link>
     </div>
-    <!--      </el-col>-->
-    <!--      <el-col :span="6">-->
     <div class="top-container-info">
       <el-link :underline="false" href="">登录<span class="sep">|</span></el-link>
       <el-link :underline="false" href="">注册<span class="sep">|</span></el-link>
       <el-link :underline="false" href="">消息通知</el-link>
     </div>
-    <!--      </el-col>-->
-    <!--      <el-col :span="2">-->
     <div class="top-container-cart">
       <el-link :underline="false" icon="el-icon-shopping-cart-1">购物车（0）</el-link>
     </div>
-    <!--      </el-col>-->
-<!--    </el-row>-->
+
   </div>
 </template>
 
@@ -45,12 +38,12 @@
     margin: auto;
   }
 
-  .top-container a{
+  .top-container a {
     color: #b0b0b0;
     font-size: 10px;
   }
 
-  .top-container .sep{
+  .top-container .sep {
     margin: 0.3em;
     color: #424242;
   }
@@ -67,11 +60,13 @@
   .top-container-cart {
     float: right;
   }
-.top-container a:hover{
-  color:#ffffff;
-}
-  .top-container-cart a:hover{
-    background-color:#ffffff;
+
+  .top-container a:hover {
+    color: #ffffff;
+  }
+
+  .top-container-cart a:hover {
+    background-color: #ffffff;
     color: #ff6700;
   }
 
