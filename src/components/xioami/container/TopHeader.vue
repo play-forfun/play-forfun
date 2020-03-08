@@ -18,13 +18,21 @@
         <el-link :underline="false" href="">社区</el-link>
       </div>
     </div>
-    <div class="top-header-search">a</div>
+    <div class="top-header-search">
+      <input v-model="message" >
+      <el-button type="primary" icon="el-icon-search"></el-button>
+    </div>
   </div>
 </template>
 
 <script>
   export default {
-    name: "TopHeader"
+    name: "TopHeader",
+    data(){
+      return {
+        message:'小米9 Pro 5G RedmiNote8'
+      }
+    }
   }
 </script>
 
@@ -46,7 +54,7 @@
 
   .top-header-nav {
     float: left;
-    width: 800px;
+    width: 650px;
     line-height:90px;
   }
   .top-header-item a:hover{
@@ -59,5 +67,10 @@
   }
   .top-header-search {
     float: right;
+    line-height: 80px;
+  }
+  el-button{
+    width: 20px;
+    height: 30px;
   }
 </style>
