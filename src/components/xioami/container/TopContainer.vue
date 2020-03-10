@@ -14,15 +14,14 @@
       <el-link :underline="false" href="">下载app <span class="sep">|</span></el-link>
       <el-link :underline="false" href="">Select Location</el-link>
     </div>
+    <div class="top-container-cart">
+      <el-link :underline="false" icon="el-icon-shopping-cart-1">购物车（0）</el-link>
+    </div>
     <div class="top-container-info">
       <el-link :underline="false" href="">登录<span class="sep">|</span></el-link>
       <el-link :underline="false" href="">注册<span class="sep">|</span></el-link>
       <el-link :underline="false" href="">消息通知</el-link>
     </div>
-    <div class="top-container-cart">
-      <el-link :underline="false" icon="el-icon-shopping-cart-1">购物车（0）</el-link>
-    </div>
-
   </div>
 </template>
 
@@ -51,13 +50,16 @@
   .top-container-nav {
     float: left;
   }
-
-  .top-container-info {
+  .top-container-info a{
     float: left;
-    margin: 0 10px 0 200px;
+    /*margin: 0 10px 0 200px;*/
+    padding: 0 5px;
   }
-
-  .top-container-cart {
+  .top-container-info{
+    float: right;
+    margin-right: 18px;
+  }
+  .top-container-cart{
     float: right;
   }
 

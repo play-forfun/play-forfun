@@ -19,8 +19,10 @@
       </div>
     </div>
     <div class="top-header-search">
-      <input v-model="message" >
-      <el-button type="primary" icon="el-icon-search"></el-button>
+<!--      <input type="search" class="search-text">
+      <input type="submit" class="iconfont"></input>-->
+      <el-input type="text" suffix-icon="el-icon-search" placeholder="小米9 Pro 5G RedmiNote8">
+      </el-input>
     </div>
   </div>
 </template>
@@ -54,8 +56,12 @@
 
   .top-header-nav {
     float: left;
-    width: 650px;
+    width: 900px;
     line-height:90px;
+  }
+  .top-header-item{
+    float: left;
+    margin-left: 35px;
   }
   .top-header-item a:hover{
     color: #ff6700;
@@ -63,14 +69,22 @@
   .top-header-item a{
     float: left;
     padding: 0 11px;
-    font-size: 0.7em;
+    font-size: 1em;
   }
   .top-header-search {
     float: right;
     line-height: 80px;
   }
-  el-button{
-    width: 20px;
-    height: 30px;
+  .top-header-search .search-text{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .top-header-search .iconfont{
+    font-size: 40px;
+    /*padding-top: 50px;*/
+  }
+  .el-input .el-input_inner{
+    background-color: #ff6700;
   }
 </style>
