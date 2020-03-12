@@ -41,14 +41,14 @@
     padding: 0;
   }
 
-  .el-main {
+/*  .el-main {
     background-color: #E9EEF3;
     width: 94%;
     color: #333;
     text-align: center;
     line-height: 160px;
     margin: 0 auto;
-  }
+  }*/
 
   body > .el-container {
     margin-bottom: 40px;

@@ -72,9 +72,9 @@
     font-size: 1em;
   }
   .top-header-search {
-    float: right;
-    line-height: 80px;
-  }
+       float: right;
+       line-height: 80px;
+     }
   .top-header-search .search-text{
     width: 200px;
     height: 50px;
