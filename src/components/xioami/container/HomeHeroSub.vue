@@ -11,7 +11,8 @@
 </script>
 
 <style scoped>
-#home-hero-sub{
-  height: 150px;
-}
+  .home-hero-sub {
+    height: 350px;
+    background-color: #fff;
+  }
 </style>

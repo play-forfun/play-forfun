@@ -35,11 +35,12 @@
   .top-container {
     width: 94%;
     margin: auto;
+    line-height: 40px;
   }
 
   .top-container a {
     color: #b0b0b0;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .top-container .sep {

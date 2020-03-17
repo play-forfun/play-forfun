@@ -1,6 +1,6 @@
 <template>
   <el-container>
-    <el-header height="30px">
+    <el-header height="40px">
       <top-container/>
     </el-header>
     <top-header/>
@@ -41,14 +41,15 @@
     padding: 0;
   }
 
-/*  .el-main {
-    background-color: #E9EEF3;
+  .el-main {
+    /*background-color: #E9EEF3;*/
     width: 94%;
-    color: #333;
-    text-align: center;
-    line-height: 160px;
+    /*color: #333;*/
+    /*text-align: center;*/
+    /*!*line-height: 160px;*!*/
     margin: 0 auto;
-  }*/
+    padding: 0;
+  }
 
   body > .el-container {
     margin-bottom: 40px;
