@@ -1,12 +1,22 @@
 <template>
   <div class="home-hero-swiper">
-    <div class="block">
       <el-carousel trigger="click" height="460px" arrow="always" interval="10000000">
         <el-carousel-item v-for="item in swiperImgs" :key="item">
           <img :src="item.url" alt="">
         </el-carousel-item>
       </el-carousel>
-    </div>
+      <div class="site-category">
+        <el-link :underline="false" href="">手机 电话卡</el-link>
+        <el-link :underline="false" href="">电视 盒子</el-link>
+        <el-link :underline="false" href="">笔记本 显示器 平板</el-link>
+        <el-link :underline="false" href="">家电 插线板</el-link>
+        <el-link :underline="false" href="">出行 穿戴</el-link>
+        <el-link :underline="false" href="">智能 路由器</el-link>
+        <el-link :underline="false" href="">电源 配件</el-link>
+        <el-link :underline="false" href="">健康 儿童</el-link>
+        <el-link :underline="false" href="">耳机 音箱</el-link>
+        <el-link :underline="false" href="">生活 箱包</el-link>
+      </div>
   </div>
 </template>
 
